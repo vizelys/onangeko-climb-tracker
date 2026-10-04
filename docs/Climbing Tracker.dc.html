@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#161415}a{color:#B5F8FE}a:hover{color:#10FFCB}button{cursor:pointer;font-family:Archivo,sans-serif}*{box-sizing:border-box}</style>
+</helmet>
+<div style="min-height:100vh;background:#161415;color:#F3ECE8;font-family:Archivo,sans-serif;padding:72px 64px 140px;display:flex;flex-direction:column;gap:104px">
+
+<header style="display:flex;flex-direction:column;gap:28px;max-width:1240px">
+  <div style="font:500 12px 'JetBrains Mono';letter-spacing:.1em;color:#6E6764">CLIMBING-FIRST LIFE TRACKER · DESIGN HANDOFF v1 · 4 OCT 2026</div>
+  <div style="font-weight:750;font-size:64px;font-stretch:112%;letter-spacing:-.03em;line-height:1">An instrument for one climber.</div>
+  <div style="font-size:18px;line-height:1.5;color:#A39A97;max-width:760px;text-wrap:pretty">Near-black ground, warm off-white ink, and an accent that follows the gym's own colour order: green → blue → red → purple. A circuit day reads mint, a limit day reads strawberry, before you read a word. Jasmine is reserved for caution.</div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px">
+    <div style="display:flex;flex-direction:column;gap:8px;width:170px"><div style="height:64px;border-radius:12px;background:#10FFCB"></div><div style="font:600 13px Archivo">Tropical Mint</div><div style="font:400 12px 'JetBrains Mono';color:#A39A97">Circuits · low finger load · flash</div></div>
+    <div style="display:flex;flex-direction:column;gap:8px;width:170px"><div style="height:64px;border-radius:12px;background:#B5F8FE"></div><div style="font:600 13px Archivo">Icy Aqua</div><div style="font:400 12px 'JetBrains Mono';color:#A39A97">Intervals · moderate · sleep</div></div>
+    <div style="display:flex;flex-direction:column;gap:8px;width:170px"><div style="height:64px;border-radius:12px;background:#F75590"></div><div style="font:600 13px Archivo">Wild Strawberry</div><div style="font:400 12px 'JetBrains Mono';color:#A39A97">Limit boulder · high</div></div>
+    <div style="display:flex;flex-direction:column;gap:8px;width:170px"><div style="height:64px;border-radius:12px;background:#C9A2FF"></div><div style="font:600 13px Archivo">Purple (derived)</div><div style="font:400 12px 'JetBrains Mono';color:#A39A97">Hangboard · very high</div></div>
+    <div style="display:flex;flex-direction:column;gap:8px;width:170px"><div style="height:64px;border-radius:12px;background:#FBD87F"></div><div style="font:600 13px Archivo">Jasmine</div><div style="font:400 12px 'JetBrains Mono';color:#A39A97">Caution · watching · stale</div></div>
+    <div style="display:flex;flex-direction:column;gap:8px;width:170px"><div style="height:64px;border-radius:12px;background:#FCE4D8"></div><div style="font:600 13px Archivo">Powder Petal</div><div style="font:400 12px 'JetBrains Mono';color:#A39A97">No finger load · food</div></div>
+  </div>
+</header>
+
+<section style="display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><span style="font:500 13px 'JetBrains Mono';color:#6E6764">01</span><span style="font-weight:700;font-size:32px;letter-spacing:-.02em">Five tabs</span><span style="font-size:16px;color:#A39A97">Flat tab bar. Every screen answers one Monday-morning question.</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+
+    <div id="1a" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">1a</span><span style="font-size:14px;color:#A39A97">Today — what am I doing, and did I do it?</span></div>
+      <div style="width:390px;height:844px;border-radius:48px;background:#0A0909;border:1px solid #2A2627;overflow:hidden;display:flex;flex-direction:column">
+        <div style="height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 34px;font:600 15px Archivo"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #A39A97;border-radius:3px"></span></div>
+        <div style="flex:1;padding:6px 16px 0;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0 4px"><div style="font-weight:700;font-size:28px;letter-spacing:-.02em">Monday</div><div style="font:500 12px 'JetBrains Mono';color:#A39A97">5 OCT · WK 41</div></div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#F75590">PLANNED · FINGER LOAD HIGH</span><span style="font:500 12px 'JetBrains Mono';color:#6E6764">75 MIN</span></div>
+            <div><div style="font-weight:750;font-size:30px;font-stretch:112%;letter-spacing:-.02em">Limit boulder</div><div style="font-size:14px;color:#A39A97;margin-top:4px">Arkose · rouges and noirs · crimps first</div></div>
+            <div style="font-size:13px;line-height:1.4;color:#A39A97;padding:10px 12px;background:#1C191A;border-radius:12px">Your note, 28 Sep: “crimps feel worse than slopers”</div>
+            <button style="height:56px;border:0;border-radius:14px;background:#F75590;color:#0A0909;font-weight:700;font-size:17px">Start session</button>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:2px 10px">
+            <sc-for list="{{ habits }}" as="h" hint-placeholder-count="4">
+              <div onClick="{{ h.toggle }}" style="display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;min-width:56px">
+                <div style="width:52px;height:52px;border-radius:50%;background:{{ h.bg }};box-shadow:{{ h.ring }};display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#0A0909">{{ h.mark }}</div>
+                <div style="font-size:12px;font-weight:500;color:{{ h.labelColor }}">{{ h.label }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div style="background:#141213;border:1px solid #2A2627;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:6px">
+              <div style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">SLEEP</div>
+              <div style="display:flex;align-items:baseline;gap:2px;font-weight:700;font-stretch:112%;font-variant-numeric:tabular-nums"><span style="font-size:38px;letter-spacing:-.03em">7</span><span style="font-size:18px;color:#A39A97">h</span><span style="font-size:38px;letter-spacing:-.03em">42</span></div>
+              <div style="font-size:12px;color:#A39A97;line-height:1.35">Up 06:52 · +7m on alarm</div>
+            </div>
+            <div style="background:#141213;border:1px solid #2A2627;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:6px">
+              <div style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">FUEL SO FAR</div>
+              <div style="font-weight:700;font-size:28px;font-stretch:112%;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:44px">1.4–1.7k</div>
+              <div style="position:relative;height:8px;border-radius:4px;background:#1C191A"><div style="position:absolute;left:55%;width:20%;top:-3px;bottom:-3px;border:1px solid #6E6764;border-radius:4px"></div><div style="position:absolute;left:0;width:38%;height:8px;border-radius:4px;background:#FCE4D8"></div></div>
+              <div style="font-size:12px;color:#A39A97">vs 2.6–3.0k climbing day</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#141213;border:1px solid #2A2627;border-radius:16px;padding:8px 8px 8px 14px">
+            <div style="flex:1;display:flex;flex-direction:column;gap:2px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">HOW I FEEL</span><span style="font-size:13px;color:#F3ECE8">Energy ok · Sore low · Keen high</span></div>
+            <button onClick="{{ confirmFeel }}" style="height:44px;padding:0 14px;border-radius:12px;border:0;background:{{ feelBg }};color:{{ feelInk }};font-weight:700;font-size:14px">{{ feelLabel }}</button>
+          </div>
+          <div style="display:flex;gap:8px">
+            <sc-for list="{{ supps }}" as="s" hint-placeholder-count="3">
+              <div onClick="{{ s.toggle }}" style="flex:1;height:44px;border-radius:12px;background:{{ s.bg }};box-shadow:{{ s.ring }};display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;font-weight:600;color:{{ s.ink }};cursor:pointer"><span style="color:#10FFCB">{{ s.mark }}</span>{{ s.n }}</div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="height:84px;flex-shrink:0;border-top:1px solid #1C191A;display:flex;padding:6px 8px 0">
+          <sc-for list="{{ tabs0 }}" as="t" hint-placeholder-count="5"><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px"><div style="width:20px;height:3px;border-radius:2px;background:{{ t.bar }}"></div><div style="font-weight:600;font-size:12px;color:{{ t.color }}">{{ t.label }}</div></div></sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div id="1b" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">1b</span><span style="font-size:14px;color:#A39A97">Log — pick an archetype, nothing else</span></div>
+      <div style="width:390px;height:844px;border-radius:48px;background:#0A0909;border:1px solid #2A2627;overflow:hidden;display:flex;flex-direction:column">
+        <div style="height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 34px;font:600 15px Archivo"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #A39A97;border-radius:3px"></span></div>
+        <div style="flex:1;padding:6px 16px 0;display:flex;flex-direction:column;gap:14px;overflow:hidden">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0 4px"><div style="font-weight:700;font-size:28px;letter-spacing:-.02em">Log</div><div style="height:36px;display:flex;align-items:center;gap:8px;padding:0 12px;border-radius:18px;background:#1C191A;font-size:13px;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:#10FFCB"></span>{{ gymName }} · Font</div></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <sc-for list="{{ archetypes }}" as="a" hint-placeholder-count="6">
+              <div style="height:152px;background:#141213;border:1px solid #2A2627;border-radius:20px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer">
+                <div style="width:12px;height:12px;border-radius:50%;background:{{ a.color }}"></div>
+                <div style="display:flex;flex-direction:column;gap:4px"><div style="font-weight:700;font-size:20px;letter-spacing:-.01em">{{ a.name }}</div><div style="font-size:12px;color:#A39A97">{{ a.hint }}</div></div>
+                <div style="display:flex;flex-direction:column;gap:6px">
+                  <div style="display:flex;gap:3px"><sc-for list="{{ a.segs }}" as="sg" hint-placeholder-count="4"><div style="flex:1;height:4px;border-radius:2px;background:{{ sg.bg }}"></div></sc-for></div>
+                  <div style="font:500 10px 'JetBrains Mono';letter-spacing:.06em;color:#6E6764">FINGER · {{ a.lvlLabel }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 4px;border-top:1px solid #1C191A"><div style="display:flex;flex-direction:column;gap:2px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">LAST LOGGED</span><span style="font-size:14px">Sat · Intervals · 5 × 8 moves</span></div><span style="font-size:14px;color:#A39A97">Edit</span></div>
+        </div>
+        <div style="height:84px;flex-shrink:0;border-top:1px solid #1C191A;display:flex;padding:6px 8px 0">
+          <sc-for list="{{ tabs1 }}" as="t" hint-placeholder-count="5"><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px"><div style="width:20px;height:3px;border-radius:2px;background:{{ t.bar }}"></div><div style="font-weight:600;font-size:12px;color:{{ t.color }}">{{ t.label }}</div></div></sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div id="1c" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">1c</span><span style="font-size:14px;color:#A39A97">Load — go hard, or back off?</span></div>
+      <div style="width:390px;height:844px;border-radius:48px;background:#0A0909;border:1px solid #2A2627;overflow:hidden;display:flex;flex-direction:column">
+        <div style="height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 34px;font:600 15px Archivo"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #A39A97;border-radius:3px"></span></div>
+        <div style="flex:1;padding:6px 16px 0;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+          <div style="padding:4px 4px 6px;display:flex;flex-direction:column;gap:10px">
+            <div style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">READINESS · MON 5 OCT</div>
+            <div style="font-weight:600;font-size:22px;line-height:1.28;letter-spacing:-.01em;text-wrap:pretty"><span style="color:#FBD87F">Keep fingers sub-maximal today.</span> Finger load is 28% over your four-week norm, and energy has read flat three days running.</div>
+          </div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:20px;padding:14px 16px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:600;font-size:14px">Finger load · 4 wk</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">BAND = YOUR NORM</span></div>
+            <svg width="324" height="112" viewBox="0 0 324 112" style="display:block;overflow:visible">
+              <rect x="0" y="56" width="324" height="24" fill="#2A2627" opacity="0.6"></rect>
+              <polygon points="{{ traceArea }}" fill="#F75590" opacity="0.12"></polygon>
+              <polyline points="{{ tracePts }}" fill="none" stroke="#F75590" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></polyline>
+              <circle cx="324" cy="24" r="5" fill="#F75590"></circle>
+              <circle cx="324" cy="24" r="10" fill="none" stroke="#FBD87F" stroke-width="1.5"></circle>
+            </svg>
+            <div style="display:flex;justify-content:space-between;font:500 11px 'JetBrains Mono';color:#6E6764"><span>8 SEP</span><span>15</span><span>22</span><span>29</span><span style="color:#F3ECE8">TODAY</span></div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#F3ECE8;padding-top:8px;border-top:1px solid #1C191A"><span style="width:8px;height:8px;border-radius:50%;background:#FBD87F"></span>L ring A2 · watching since 22 Sep</div>
+          </div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:20px;padding:14px 16px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:600;font-size:14px">Session load · 14 d</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">RPE × MIN</span></div>
+            <div style="height:56px;display:flex;align-items:flex-end;gap:5px">
+              <sc-for list="{{ loadBars }}" as="b" hint-placeholder-count="14"><div style="flex:1;height:{{ b.h }};background:{{ b.c }};border-radius:3px"></div></sc-for>
+            </div>
+          </div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:20px;padding:14px 16px;display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:600;font-size:14px">Grade pyramid · 8 wk</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">SENDS · PROJECTS</span></div>
+            <sc-for list="{{ pyramid }}" as="r" hint-placeholder-count="6">
+              <div style="display:flex;align-items:center;gap:10px;height:18px">
+                <span style="width:34px;font:600 12px 'JetBrains Mono';color:#A39A97">{{ r.g }}</span>
+                <div style="flex:1;display:flex;gap:3px;height:12px"><div style="width:{{ r.sw }};background:{{ r.c }};border-radius:3px"></div><div style="width:{{ r.pw }};box-shadow:inset 0 0 0 1.5px {{ r.c }};border-radius:3px"></div></div>
+                <span style="width:40px;text-align:right;font:500 12px 'JetBrains Mono';color:#6E6764">{{ r.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="height:84px;flex-shrink:0;border-top:1px solid #1C191A;display:flex;padding:6px 8px 0">
+          <sc-for list="{{ tabs2 }}" as="t" hint-placeholder-count="5"><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px"><div style="width:20px;height:3px;border-radius:2px;background:{{ t.bar }}"></div><div style="font-weight:600;font-size:12px;color:{{ t.color }}">{{ t.label }}</div></div></sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div id="1d" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">1d</span><span style="font-size:14px;color:#A39A97">Tests — am I getting stronger?</span></div>
+      <div style="width:390px;height:844px;border-radius:48px;background:#0A0909;border:1px solid #2A2627;overflow:hidden;display:flex;flex-direction:column">
+        <div style="height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 34px;font:600 15px Archivo"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #A39A97;border-radius:3px"></span></div>
+        <div style="flex:1;padding:6px 16px 0;display:flex;flex-direction:column;gap:14px;overflow:hidden">
+          <div style="padding:0 4px;font-weight:700;font-size:28px;letter-spacing:-.02em">Tests</div>
+          <div style="background:#141213;border:1px solid #FBD87F;border-radius:20px;padding:16px;display:flex;align-items:center;gap:12px">
+            <div style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#FBD87F">9 WEEKS STALE</span><span style="font-weight:700;font-size:19px">Max hang, 20 mm</span><span style="font-size:13px;color:#A39A97">Last +18 kg · 3 Aug</span></div>
+            <button style="height:48px;padding:0 18px;border:0;border-radius:14px;background:#FBD87F;color:#0A0909;font-weight:700;font-size:15px">Run test</button>
+          </div>
+          <div style="display:flex;flex-direction:column">
+            <sc-for list="{{ tests }}" as="t" hint-placeholder-count="5">
+              <div style="display:flex;align-items:center;gap:12px;padding:14px 4px;border-bottom:1px solid #1C191A">
+                <div style="flex:1;display:flex;flex-direction:column;gap:3px;min-width:0"><span style="font-weight:600;font-size:15px">{{ t.n }}</span><span style="font-size:12px;color:#6E6764">{{ t.c }}</span></div>
+                <div style="display:flex;align-items:flex-end;gap:2px;height:28px;width:46px"><sc-for list="{{ t.h }}" as="hb" hint-placeholder-count="6"><div style="flex:1;height:{{ hb.h }};background:{{ hb.c }};border-radius:1.5px"></div></sc-for></div>
+                <div style="width:92px;text-align:right;display:flex;flex-direction:column;gap:2px"><div style="font-weight:700;font-size:24px;font-stretch:112%;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ t.v }}<span style="font-size:13px;color:#A39A97;font-weight:500"> {{ t.u }}</span></div><span style="font:500 11px 'JetBrains Mono';color:#6E6764">{{ t.d }}</span></div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="height:84px;flex-shrink:0;border-top:1px solid #1C191A;display:flex;padding:6px 8px 0">
+          <sc-for list="{{ tabs3 }}" as="t" hint-placeholder-count="5"><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px"><div style="width:20px;height:3px;border-radius:2px;background:{{ t.bar }}"></div><div style="font-weight:600;font-size:12px;color:{{ t.color }}">{{ t.label }}</div></div></sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div id="1e" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">1e</span><span style="font-size:14px;color:#A39A97">Me — sleep, food, mind, profile</span></div>
+      <div style="width:390px;height:844px;border-radius:48px;background:#0A0909;border:1px solid #2A2627;overflow:hidden;display:flex;flex-direction:column">
+        <div style="height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 34px;font:600 15px Archivo"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #A39A97;border-radius:3px"></span></div>
+        <div style="flex:1;padding:6px 16px 0;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+          <div style="padding:0 4px;font-weight:700;font-size:28px;letter-spacing:-.02em">Me</div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:20px;padding:14px 16px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:600;font-size:14px">Sleep · 7 nights</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">AVG 7H22 / 8H</span></div>
+            <div style="position:relative;height:64px;display:flex;align-items:flex-end;gap:8px">
+              <div style="position:absolute;left:0;right:0;bottom:56.9px;border-top:1px dashed #6E6764"></div>
+              <sc-for list="{{ sleep }}" as="s" hint-placeholder-count="7"><div style="flex:1;height:{{ s.h }};background:{{ s.c }};border-radius:4px"></div></sc-for>
+            </div>
+            <div style="font-size:12px;color:#A39A97">Wake drift +9 min avg against the 06:45 alarm</div>
+          </div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:20px;padding:14px 16px;display:flex;flex-direction:column;gap:7px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-weight:600;font-size:14px">Fuel vs training</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">KCAL BANDS</span></div>
+            <sc-for list="{{ fuel }}" as="f" hint-placeholder-count="7">
+              <div style="display:flex;align-items:center;gap:10px;height:14px">
+                <span style="width:28px;font:500 11px 'JetBrains Mono';color:#A39A97">{{ f.d }}</span>
+                <span style="width:6px;height:6px;border-radius:50%;background:{{ f.dot }}"></span>
+                <div style="flex:1;position:relative;height:14px"><div style="position:absolute;top:0;bottom:0;left:{{ f.dl }};width:{{ f.dw }};box-shadow:inset 0 0 0 1px #6E6764;border-radius:4px"></div><div style="position:absolute;top:4px;height:6px;left:{{ f.il }};width:{{ f.iw }};background:#FCE4D8;border-radius:3px"></div></div>
+              </div>
+            </sc-for>
+            <div style="font-size:12px;color:#A39A97;padding-top:4px">Thursday was a climbing day that came in low.</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;background:#141213;border:1px solid #2A2627;border-radius:16px;padding:8px 8px 8px 16px">
+            <div style="flex:1;display:flex;flex-direction:column;gap:2px"><span style="font-weight:600;font-size:14px">Mindfulness</span><span style="font-size:12px;color:#A39A97">9 of 14 days · 11 min avg</span></div>
+            <button style="height:44px;padding:0 16px;border:0;border-radius:12px;background:#1C191A;color:#F3ECE8;font-weight:600;font-size:14px">Start timer</button>
+          </div>
+          <div style="display:flex;flex-direction:column">
+            <div style="display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:0 4px;border-bottom:1px solid #1C191A"><span style="font-size:14px">Equipment</span><span style="font-size:13px;color:#6E6764">Board · rings · 3 bands · 2 bells</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:0 4px;border-bottom:1px solid #1C191A"><span style="font-size:14px">Exercise preferences</span><span style="font-size:13px;color:#6E6764">14 liked · 3 never</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:0 4px;border-bottom:1px solid #1C191A"><span style="font-size:14px">Weakness notes</span><span style="font-size:13px;color:#6E6764">3 · latest 28 Sep</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:0 4px;border-bottom:1px solid #1C191A"><span style="font-size:14px">Niggles</span><span style="font-size:13px;color:#FBD87F">1 watching</span></div>
+          </div>
+        </div>
+        <div style="height:84px;flex-shrink:0;border-top:1px solid #1C191A;display:flex;padding:6px 8px 0">
+          <sc-for list="{{ tabs4 }}" as="t" hint-placeholder-count="5"><div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px"><div style="width:20px;height:3px;border-radius:2px;background:{{ t.bar }}"></div><div style="font-weight:600;font-size:12px;color:{{ t.color }}">{{ t.label }}</div></div></sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><span style="font:500 13px 'JetBrains Mono';color:#6E6764">02 · 03</span><span style="font-weight:700;font-size:32px;letter-spacing:-.02em">Limit boulder + grade picker</span><span style="font-size:16px;color:#A39A97">Live — tap a colour, then an outcome. That's a logged problem.</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+
+    <div id="3a" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">3a</span><span style="font-size:14px;color:#A39A97">Limit boulder form, picker docked — tap the gym chip</span></div>
+      <div style="position:relative;width:390px;height:844px;border-radius:48px;background:#0A0909;border:1px solid #2A2627;overflow:hidden;display:flex;flex-direction:column">
+        <div style="height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 34px;font:600 15px Archivo"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #A39A97;border-radius:3px"></span></div>
+        <div style="padding:4px 16px 10px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0">
+          <div style="flex:1;display:flex;flex-direction:column;gap:2px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#F75590">LIMIT BOULDER · {{ problemCount }} PROBLEMS</span><span style="font-weight:700;font-size:34px;font-stretch:112%;font-variant-numeric:tabular-nums;letter-spacing:-.02em">38:12</span></div>
+          <button onClick="{{ openGym }}" style="height:44px;padding:0 12px;border-radius:12px;border:0;background:#1C191A;color:#F3ECE8;display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px"><span style="width:8px;height:8px;border-radius:50%;background:#10FFCB"></span>{{ gymName }}</button>
+          <button style="height:44px;padding:0 14px;border-radius:12px;border:1px solid #2A2627;background:transparent;color:#F3ECE8;font-weight:600;font-size:14px">End</button>
+        </div>
+        <sc-if value="{{ gymOpen }}" hint-placeholder-val="{{ false }}">
+          <div onClick="{{ closeGym }}" style="position:absolute;inset:0;background:rgba(0,0,0,.6);z-index:5"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;z-index:6;background:#141213;border-top:1px solid #2A2627;border-radius:24px 24px 0 0;padding:10px 16px 30px;display:flex;flex-direction:column;gap:4px">
+            <div style="width:36px;height:5px;border-radius:3px;background:#3A3536;align-self:center;margin-bottom:10px"></div>
+            <div style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764;padding:0 12px 8px">WHERE ARE YOU CLIMBING TODAY?</div>
+            <sc-for list="{{ gyms }}" as="gm" hint-placeholder-count="4">
+              <div onClick="{{ gm.pick }}" style="min-height:64px;display:flex;align-items:center;gap:12px;padding:0 12px;border-radius:14px;background:{{ gm.bg }};cursor:pointer">
+                <div style="flex:1;display:flex;flex-direction:column;gap:8px"><div style="display:flex;align-items:baseline;gap:8px"><span style="font-weight:700;font-size:16px">{{ gm.name }}</span><span style="font:500 11px 'JetBrains Mono';color:{{ gm.noteColor }}">{{ gm.note }}</span></div>
+                  <div style="display:flex;gap:3px"><sc-for list="{{ gm.strip }}" as="sw" hint-placeholder-count="7"><div style="flex:1;height:6px;border-radius:2px;background:{{ sw.c }};box-shadow:{{ sw.edge }}"></div></sc-for></div></div>
+                <span style="width:20px;font-weight:700;color:#10FFCB">{{ gm.mark }}</span>
+              </div>
+            </sc-for>
+            <div style="min-height:52px;display:flex;align-items:center;padding:0 12px;font-size:14px;font-weight:600;color:#A39A97">+ Add a gym — map its colours once</div>
+          </div>
+        </sc-if>
+        <div style="flex:1;overflow:hidden;padding:0 16px;display:flex;flex-direction:column">
+          <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}"><div style="height:36px;flex-shrink:0;display:flex;align-items:center;gap:8px;padding:0 4px;font-size:13px;font-weight:600;color:#10FFCB">✓ {{ toast }}</div></sc-if>
+          <sc-for list="{{ problems }}" as="p" hint-placeholder-count="3">
+            <div style="height:56px;flex-shrink:0;display:flex;align-items:center;gap:12px;padding:0 4px;border-bottom:1px solid #1C191A">
+              <div style="width:32px;height:28px;border-radius:8px;background:{{ p.color }};box-shadow:{{ p.edge }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#F3ECE8">{{ p.tag }}</div>
+              <span style="width:58px;font-weight:700;font-size:24px;font-stretch:112%;letter-spacing:-.02em">{{ p.g }}</span>
+              <span style="flex:1;font:500 12px 'JetBrains Mono';color:#6E6764">{{ p.alt }} · ×{{ p.att }}</span>
+              <span style="height:28px;display:flex;align-items:center;padding:0 10px;border-radius:14px;background:{{ p.bg }};box-shadow:{{ p.ring }};color:{{ p.ink }};font-weight:700;font-size:12px">{{ p.out }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="flex-shrink:0;background:#141213;border-top:1px solid #2A2627;border-radius:24px 24px 0 0;padding:14px 16px 26px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:flex-end;justify-content:space-between">
+            <div style="display:flex;align-items:baseline;gap:10px"><span style="font-weight:800;font-size:46px;line-height:1;font-stretch:115%;letter-spacing:-.03em">{{ curGrade }}</span><span style="font:500 12px 'JetBrains Mono';color:#A39A97">{{ curAlt }} · {{ curBand }}</span></div>
+            <div style="display:flex;align-items:center;gap:4px">
+              <button onClick="{{ attDown }}" style="width:44px;height:44px;border-radius:12px;border:0;background:#1C191A;color:#F3ECE8;font-size:22px;font-weight:600">−</button>
+              <div style="width:44px;text-align:center;display:flex;flex-direction:column"><span style="font-weight:700;font-size:20px">{{ att }}</span><span style="font:500 9px 'JetBrains Mono';color:#6E6764">TRIES</span></div>
+              <button onClick="{{ attUp }}" style="width:44px;height:44px;border-radius:12px;border:0;background:#1C191A;color:#F3ECE8;font-size:22px;font-weight:600">+</button>
+            </div>
+          </div>
+          <sc-if value="{{ isColour }}" hint-placeholder-val="{{ true }}"><div style="display:flex;gap:5px"><sc-for list="{{ bands }}" as="b" hint-placeholder-count="7"><div onClick="{{ b.pick }}" style="flex:1;height:56px;border-radius:12px;background:{{ b.color }};box-shadow:{{ b.ring }};cursor:pointer"></div></sc-for></div></sc-if>
+          <sc-if value="{{ isNumber }}" hint-placeholder-val="{{ false }}"><div style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px"><sc-for list="{{ bands }}" as="b" hint-placeholder-count="16"><div onClick="{{ b.pick }}" style="height:44px;border-radius:10px;background:{{ b.numBg }};color:{{ b.numInk }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;cursor:pointer">{{ b.name }}</div></sc-for></div></sc-if>
+          <sc-if value="{{ showFine }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;gap:6px">
+              <sc-for list="{{ fineCells }}" as="c" hint-placeholder-count="3"><div onClick="{{ c.pick }}" style="flex:1;height:44px;border-radius:12px;background:{{ c.bg }};color:{{ c.ink }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;cursor:pointer">{{ c.g }}</div></sc-for>
+            </div>
+          </sc-if>
+          <div style="display:flex;gap:6px">
+            <button onClick="{{ logFlash }}" style="flex:1;height:64px;border-radius:16px;border:0;background:#10FFCB;color:#0A0909;font-weight:750;font-size:17px">Flash</button>
+            <button onClick="{{ logSend }}" style="flex:1;height:64px;border-radius:16px;border:0;background:#F3ECE8;color:#0A0909;font-weight:750;font-size:17px">Send</button>
+            <button onClick="{{ logProject }}" style="flex:1;height:64px;border-radius:16px;border:1.5px solid #6E6764;background:transparent;color:#F3ECE8;font-weight:750;font-size:17px">Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="2a" style="display:flex;flex-direction:column;gap:14px;width:600px;max-width:100%">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">2a</span><span style="font-size:14px;color:#A39A97">Grade picker anatomy</span></div>
+      <div style="background:#0F0E0E;border:1px solid #2A2627;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="font-weight:750;font-size:30px;font-stretch:112%;letter-spacing:-.02em">Two taps. Colour, then outcome.</div><div style="font-size:15px;line-height:1.5;color:#A39A97;text-wrap:pretty">Everything between is defaulted. The outcome button is the save, so there is no separate Log button to find with chalky fingers.</div></div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="display:grid;grid-template-columns:28px 1fr;gap:12px"><span style="font:600 13px 'JetBrains Mono';color:#F75590">01</span><div><div style="font-weight:600;font-size:15px">Gym once per session</div><div style="font-size:14px;color:#A39A97;line-height:1.45">Tap the gym chip: Arkose, Block'Out, Vertical Art, The Roof, or one you've added. Its profile maps tags onto Font.</div></div></div>
+          <div style="display:grid;grid-template-columns:28px 1fr;gap:12px"><span style="font:600 13px 'JetBrains Mono';color:#F75590">02</span><div><div style="font-weight:600;font-size:15px">Tag first — colour or number</div><div style="font-size:14px;color:#A39A97;line-height:1.45">Colour gyms get one 56pt swatch per band, in that gym's order (6 or 7). Block'Out swaps to a B0–B15 grid; B-grades are exact, so the fine row disappears.</div></div></div>
+          <div style="display:grid;grid-template-columns:28px 1fr;gap:12px"><span style="font:600 13px 'JetBrains Mono';color:#F75590">03</span><div><div style="font-weight:600;font-size:15px">Fine row is optional</div><div style="font-size:14px;color:#A39A97;line-height:1.45">Defaults to the middle of the band. Nudge if the setter's grade is known. Canonical grade is stored; display follows preference.</div></div></div>
+          <div style="display:grid;grid-template-columns:28px 1fr;gap:12px"><span style="font:600 13px 'JetBrains Mono';color:#F75590">04</span><div><div style="font-weight:600;font-size:15px">Outcome commits</div><div style="font-size:14px;color:#A39A97;line-height:1.45">Flash, Send or Project writes the row locally, resets tries to 1 and keeps the colour. Confirmation is one line of mint text that fades in 1.8s.</div></div></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px"><sc-for list="{{ gymChips }}" as="c" hint-placeholder-count="4"><div onClick="{{ c.pick }}" style="height:36px;display:flex;align-items:center;padding:0 14px;border-radius:18px;background:{{ c.bg }};color:{{ c.ink }};font-weight:600;font-size:13px;cursor:pointer">{{ c.name }}</div></sc-for></div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <div style="display:grid;grid-template-columns:36px 1fr 1fr 1fr;gap:12px;padding:0 0 8px;font:500 11px 'JetBrains Mono';letter-spacing:.06em;color:#6E6764"><span></span><span>{{ gymNameUpper }}</span><span>FONT</span><span>V</span></div>
+          <sc-for list="{{ convRows }}" as="r" hint-placeholder-count="6">
+            <div style="display:grid;grid-template-columns:36px 1fr 1fr 1fr;gap:12px;align-items:center;height:40px;border-top:1px solid #1C191A">
+              <div style="width:22px;height:22px;border-radius:6px;background:{{ r.color }};box-shadow:{{ r.edge }}"></div>
+              <span style="font-size:14px;font-weight:600">{{ r.name }}</span>
+              <span style="font:500 13px 'JetBrains Mono';color:#F3ECE8">{{ r.font }}</span>
+              <span style="font:500 13px 'JetBrains Mono';color:#A39A97">{{ r.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;gap:6px;align-items:stretch">
+          <div style="flex:1;background:#141213;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font:500 11px 'JetBrains Mono';color:#6E6764">TAG</span><span style="font-size:13px">Read colour</span></div>
+          <div style="flex:1;background:#141213;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font:500 11px 'JetBrains Mono';color:#6E6764">~1 S</span><span style="font-size:13px">Tap swatch</span></div>
+          <div style="flex:1;background:#141213;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font:500 11px 'JetBrains Mono';color:#6E6764">~1 S</span><span style="font-size:13px">Tap outcome</span></div>
+          <div style="flex:1;background:#10FFCB;color:#0A0909;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font:600 11px 'JetBrains Mono'">3 S / 10 S</span><span style="font-size:13px;font-weight:600">Back on the wall</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="2b" style="display:flex;flex-direction:column;gap:14px;width:580px;max-width:100%">
+      <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">2b</span><span style="font-size:14px;color:#A39A97">Reference data — every gym on one axis</span></div>
+      <div style="background:#0F0E0E;border:1px solid #2A2627;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="font-weight:750;font-size:26px;font-stretch:112%;letter-spacing:-.02em">A bleu at Arkose is not a bleu at Vertical Art.</div><div style="font-size:14px;line-height:1.5;color:#A39A97;text-wrap:pretty">Each problem stores Font as canonical plus the tag as entered. Switching gyms mid-month never bends the pyramid or the finger-load trace.</div></div>
+        <div style="display:flex;flex-direction:column;gap:3px">
+          <div style="display:flex;align-items:center;gap:8px;padding-bottom:6px;font:500 10px 'JetBrains Mono';letter-spacing:.06em;color:#6E6764"><span style="width:40px">FONT</span><span style="width:36px">V</span><div style="flex:1;display:flex;gap:4px"><span style="flex:1">ARKOSE</span><span style="flex:1">BLOCK'OUT</span><span style="flex:1">V. ART</span><span style="flex:1;color:#FBD87F">THE ROOF*</span></div></div>
+          <sc-for list="{{ matrix }}" as="r" hint-placeholder-count="19">
+            <div style="display:flex;align-items:center;gap:8px;padding:0 0;border-radius:6px;background:{{ r.cur }}">
+              <span style="width:40px;font:600 12px 'JetBrains Mono'">{{ r.g }}</span>
+              <span style="width:36px;font:500 12px 'JetBrains Mono';color:#6E6764">{{ r.v }}</span>
+              <div style="flex:1;display:flex;gap:4px"><sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="4"><div style="flex:1;height:22px;border-radius:5px;background:{{ c.bg }};box-shadow:{{ c.edge }};color:{{ c.ink }};display:flex;align-items:center;justify-content:center;font-weight:600;font-size:11px">{{ c.label }}</div></sc-for></div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="font-size:12px;line-height:1.5;color:#6E6764;text-wrap:pretty">* The Roof grades by the start sticker (pastille), not hold colour — the picker follows the sticker. Its colour→Font ranges aren't published; these are placeholders until mapped from the wall chart in Me › Gyms. Arkose's in-between grades (5C, 6A+, 6C, 7A+) go to the nearer band; Block'Out B3 covers 5B–5C.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><span style="font:500 13px 'JetBrains Mono';color:#6E6764">04</span><span style="font-weight:700;font-size:32px;letter-spacing:-.02em">Readiness line + finger load</span><span style="font-size:16px;color:#A39A97">One sentence that joins load and how you've felt. See <a href="#1c">1c</a> in context.</span></div>
+  <div id="4a" style="display:flex;flex-direction:column;gap:14px;max-width:1240px">
+    <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">4a</span><span style="font-size:14px;color:#A39A97">Three states, plus how the number is made</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">GO</span><div style="font-weight:600;font-size:21px;line-height:1.3;text-wrap:pretty"><span style="color:#10FFCB">Good day to pull hard.</span> Finger load sits inside your norm and you've reported high energy two days running.</div></div>
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">EASE</span><div style="font-weight:600;font-size:21px;line-height:1.3;text-wrap:pretty"><span style="color:#FBD87F">Keep fingers sub-maximal today.</span> Finger load is 28% over your four-week norm, and energy has read flat three days running.</div></div>
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:10px"><span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">REST FINGERS</span><div style="font-weight:600;font-size:21px;line-height:1.3;text-wrap:pretty"><span style="color:#F75590">Rest your fingers today.</span> This would be a second high-load day in 48 hours with your L ring finger marked hurting. Run or do strength instead.</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+      <div style="background:#0F0E0E;border:1px solid #2A2627;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-weight:600;font-size:16px">Finger load = archetype weight × volume × intensity</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border-radius:50%;background:#C9A2FF"></span><span style="flex:1;font-size:14px">Hangboard</span><span style="font:500 13px 'JetBrains Mono'">1.00</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border-radius:50%;background:#F75590"></span><span style="flex:1;font-size:14px">Limit boulder</span><span style="font:500 13px 'JetBrains Mono'">0.80</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border-radius:50%;background:#B5F8FE"></span><span style="flex:1;font-size:14px">Intervals</span><span style="font:500 13px 'JetBrains Mono'">0.50</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border-radius:50%;background:#10FFCB"></span><span style="flex:1;font-size:14px">Circuits</span><span style="font:500 13px 'JetBrains Mono'">0.25</span></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border-radius:50%;background:#FCE4D8"></span><span style="flex:1;font-size:14px">Strength · Run</span><span style="font:500 13px 'JetBrains Mono'">0</span></div>
+        </div>
+        <div style="font-size:13px;color:#A39A97;line-height:1.45">Units are arbitrary; consistency is the point. The trace is a rolling 7-day sum, drawn over 28 days against your own norm band.</div>
+      </div>
+      <div style="background:#0F0E0E;border:1px solid #2A2627;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-weight:600;font-size:16px">How the sentence is composed</div>
+        <div style="display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:14px;line-height:1.45"><span style="font:600 13px 'JetBrains Mono';color:#6E6764">1</span><span>Verdict from finger load vs norm, and high-load sessions in the last 48h.</span><span style="font:600 13px 'JetBrains Mono';color:#6E6764">2</span><span>Downgraded one step if check-ins read low for 3+ days.</span><span style="font:600 13px 'JetBrains Mono';color:#6E6764">3</span><span>Downgraded to rest if a finger niggle is marked hurting.</span><span style="font:600 13px 'JetBrains Mono';color:#6E6764">4</span><span>Reason clause names the one or two inputs that moved it. Never more.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><span style="font:500 13px 'JetBrains Mono';color:#6E6764">05</span><span style="font-weight:700;font-size:32px;letter-spacing:-.02em">Components</span></div>
+  <div id="5a" style="display:flex;flex-direction:column;gap:14px;max-width:1240px">
+    <div style="display:flex;align-items:center;gap:10px"><span style="font:600 12px 'JetBrains Mono';background:#F3ECE8;color:#0A0909;padding:3px 7px;border-radius:4px">5a</span><span style="font-size:14px;color:#A39A97">Habit dot · plate chip · session card · number display</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:16px">
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:18px">
+        <span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">HABIT DOT · 52PT · TAP DONE, LONG-PRESS UNDO</span>
+        <div style="display:flex;gap:32px;align-items:flex-start">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:52px;height:52px;border-radius:50%;box-shadow:inset 0 0 0 2px #3A3536"></div><span style="font-size:12px;color:#A39A97">Open</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:52px;height:52px;border-radius:50%;background:#F3ECE8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#0A0909">✓</div><span style="font-size:12px;color:#F3ECE8">Done</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:52px;height:52px;border-radius:50%;background:#F3ECE8;box-shadow:0 0 0 3px #0A0909,0 0 0 5px #FBD87F;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#0A0909">✓</div><span style="font-size:12px;color:#FBD87F">Undoing</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px"><div style="width:52px;height:52px;border-radius:50%;background:#F3ECE8;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#0A0909">12m</div><span style="font-size:12px;color:#F3ECE8">Timed</span></div>
+        </div>
+      </div>
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">PLATE CHIP · ONE TAP LOGS · RANGE, NEVER A POINT</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <div style="min-height:52px;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:8px 14px;border-radius:14px;background:#1C191A"><span style="font-weight:600;font-size:14px">Gochujang mince bowl</span><span style="font:500 11px 'JetBrains Mono';color:#A39A97">PRESET · 650–800</span></div>
+          <div style="min-height:52px;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:8px 14px;border-radius:14px;background:#FCE4D8;color:#0A0909"><span style="font-weight:600;font-size:14px">✓ Overnight oats</span><span style="font:500 11px 'JetBrains Mono';color:#4A4446">LOGGED · 450–550</span></div>
+          <div style="min-height:52px;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:8px 14px;border-radius:14px;box-shadow:inset 0 0 0 1px #3A3536"><span style="font-weight:600;font-size:14px">“two slices + a beer”</span><span style="font:500 11px 'JetBrains Mono';color:#A39A97">TEXT · 700–950</span></div>
+          <div style="min-height:52px;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:8px 14px;border-radius:14px;box-shadow:inset 0 0 0 1px #3A3536"><span style="font-weight:600;font-size:14px">Ramen, eating out</span><span style="font:500 11px 'JetBrains Mono';color:#A39A97">PHOTO · 550–750</span></div>
+        </div>
+      </div>
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">SESSION CARD · ACCENT = FINGER LOAD</span>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:6px"><span style="font:600 10px 'JetBrains Mono';letter-spacing:.08em;color:#C9A2FF">VERY HIGH</span><span style="font-weight:700;font-size:17px">Hangboard</span><span style="font-size:12px;color:#A39A97">20mm · 7:3 × 6 · +18kg</span></div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:6px"><span style="font:600 10px 'JetBrains Mono';letter-spacing:.08em;color:#F75590">HIGH</span><span style="font-weight:700;font-size:17px">Limit boulder</span><span style="font-size:12px;color:#A39A97">9 problems · max 7A</span></div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:6px"><span style="font:600 10px 'JetBrains Mono';letter-spacing:.08em;color:#B5F8FE">MODERATE</span><span style="font-weight:700;font-size:17px">Intervals</span><span style="font-size:12px;color:#A39A97">5 × 8 moves · 3 min rest</span></div>
+          <div style="background:#141213;border:1px solid #2A2627;border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:6px"><span style="font:600 10px 'JetBrains Mono';letter-spacing:.08em;color:#10FFCB">LOW</span><span style="font-weight:700;font-size:17px">Circuits</span><span style="font-size:12px;color:#A39A97">4 × 12 min · pump 2/3</span></div>
+        </div>
+      </div>
+      <div style="background:#0A0909;border:1px solid #2A2627;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px">
+        <span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;color:#6E6764">NUMBER DISPLAY · ARCHIVO 112% WIDTH, TABULAR</span>
+        <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:flex-end">
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:800;font-size:56px;line-height:1;font-stretch:115%;letter-spacing:-.03em">7A</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">GRADE · V6</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:700;font-size:44px;line-height:1;font-stretch:112%;letter-spacing:-.03em;font-variant-numeric:tabular-nums">10.0<span style="font-size:20px;color:#A39A97">s</span></span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">HANG</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:700;font-size:44px;line-height:1;font-stretch:112%;letter-spacing:-.03em;font-variant-numeric:tabular-nums">7<span style="font-size:20px;color:#A39A97">h</span>42</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">SLEEP</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:700;font-size:32px;line-height:1;font-stretch:112%;letter-spacing:-.02em;font-variant-numeric:tabular-nums">550–750</span><span style="font:500 11px 'JetBrains Mono';color:#6E6764">KCAL · PHOTO</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;gradeScale&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Font&quot;,&quot;V&quot;],&quot;default&quot;:&quot;Font&quot;,&quot;tsType&quot;:&quot;'Font'|'V'&quot;,&quot;section&quot;:&quot;Grade picker&quot;},&quot;showFineRow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Grade picker&quot;}}">
+const FONT=['3','4','4+','5A','5B','5C','6A','6A+','6B','6B+','6C','6C+','7A','7A+','7B','7B+','7C','7C+','8A'];
+const V={'3':'VB','4':'V0','4+':'V0','5A':'V1','5B':'V1','5C':'V2','6A':'V3','6A+':'V3','6B':'V4','6B+':'V4','6C':'V5','6C+':'V5','7A':'V6','7A+':'V7','7B':'V8','7B+':'V8','7C':'V9','7C+':'V10','8A':'V11'};
+const COL={Blanc:['#F3ECE8','#0A0909'],Jaune:['#FBD87F','#0A0909'],Orange:['#FFB27A','#0A0909'],Vert:['#10FFCB','#0A0909'],Bleu:['#B5F8FE','#0A0909'],Rouge:['#F75590','#0A0909'],Noir:['#000000','#F3ECE8'],Violet:['#C9A2FF','#0A0909']};
+const cb=(name,g)=>({name,color:COL[name][0],ink:COL[name][1],dark:name==='Noir',g});
+const BO=[['4'],['4+'],['5A'],['5B','5C'],['6A'],['6A+'],['6B'],['6B+'],['6C'],['6C+'],['7A'],['7A+'],['7B'],['7B+'],['7C'],['7C+']];
+const GYMS=[
+ {name:'Arkose',note:'COULEURS · 7',kind:'colour',bands:[cb('Blanc',['3']),cb('Jaune',['4','4+']),cb('Vert',['5A','5B','5C']),cb('Bleu',['6A','6A+']),cb('Rouge',['6B','6B+','6C']),cb('Noir',['6C+','7A','7A+']),cb('Violet',['7B','7B+','7C','7C+'])]},
+ {name:"Block'Out",note:'B0 – B15',kind:'number',bands:BO.map((g,i)=>({name:'B'+i,color:'#1C191A',ink:'#F3ECE8',g,num:true}))},
+ {name:'Vertical Art',note:'COULEURS · 6',kind:'colour',bands:[cb('Orange',['4','4+']),cb('Vert',['5A','5B','5C']),cb('Bleu',['6A','6A+','6B']),cb('Rouge',['6B+','6C','6C+']),cb('Noir',['7A','7A+','7B']),cb('Violet',['7B+','7C','7C+'])]},
+ {name:'The Roof',note:'PASTILLE · À CONFIRMER',warn:true,kind:'colour',bands:[cb('Jaune',['4','4+','5A']),cb('Vert',['5B','5C','6A']),cb('Bleu',['6A+','6B','6B+']),cb('Rouge',['6C','6C+','7A']),cb('Noir',['7A+','7B','7B+']),cb('Violet',['7C','7C+','8A'])]}];
+const EDGE='inset 0 0 0 1.5px #4A4446';
+const OUT={flash:{l:'Flash',bg:'#10FFCB',ink:'#0A0909',ring:'none'},send:{l:'Send',bg:'#F3ECE8',ink:'#0A0909',ring:'none'},project:{l:'Project',bg:'transparent',ink:'#A39A97',ring:'inset 0 0 0 1.5px #6E6764'}};
+const TABS=['Today','Log','Load','Tests','Me'];
+const TRACE=[52,50,55,58,54,56,60,58,57,62,60,59,63,61,64,66,63,67,70,68,72,75,74,78,82,80,86,90];
+const S='#F75590',A='#B5F8FE',M='#10FFCB',P='#FCE4D8',U='#C9A2FF';
+const LOADS=[[70,S],[0],[35,A],[20,P],[0],[85,U],[15,M],[65,S],[0],[40,A],[25,P],[0],[90,S],[30,M]];
+const FUEL=[['Mon',1,2600,3000,2500,2950],['Tue',0,2000,2300,2100,2500],['Wed',1,2700,3100,2600,3000],['Thu',1,2700,3100,1800,2200],['Fri',0,2000,2300,2200,2600],['Sat',1,2800,3200,2700,3300],['Sun',0,2000,2300,2000,2400]];
+const TESTS=[
+ {n:'Max hang',c:'20 mm · 10 s · half crimp',v:'+18',u:'kg',d:'3 AUG',h:[40,48,52,60,66,72]},
+ {n:'Bent-arm hang',c:'90° · bar',v:'48',u:'s',d:'+6 · 21 SEP',h:[50,55,58,62,70,80]},
+ {n:'Weighted pull-up',c:'3 reps',v:'+32',u:'kg',d:'+4 · 14 SEP',h:[55,58,60,66,70,76]},
+ {n:'Grip L / R',c:'Dynamometer',v:'52/49',u:'kg',d:'±0 · 14 SEP',h:[70,72,72,74,74,74]},
+ {n:'Lock-off',c:'90° · L/R avg',v:'22',u:'s',d:'+3 · 21 SEP',h:[40,46,50,55,58,64]}];
+const mid=(gym,b)=>gym.kind==='number'?0:Math.floor((gym.bands[b].g.length-1)/2);
+const range=(a)=>a.length>1&&a[0]!==a[a.length-1]?a[0]+' – '+a[a.length-1]:a[0];
+
+class Component extends DCLogic {
+  state={gym:0,band:4,fine:1,att:1,toast:null,feel:false,gymOpen:false,
+    habits:[true,false,false,false],supps:[true,false,false],
+    problems:[{gym:0,b:4,f:1,att:6,out:'project'},{gym:0,b:3,f:1,att:1,out:'flash'},{gym:0,b:5,f:0,att:3,out:'send'}]};
+  scale(){return this.props.gradeScale??'Font';}
+  g(fg){return this.scale()==='V'?V[fg]:fg;}
+  alt(fg){return this.scale()==='V'?fg:V[fg];}
+  log(out){
+    const {gym,band,fine,att}=this.state;
+    const fg=GYMS[gym].bands[band].g[fine];
+    const msg=this.g(fg)+' '+OUT[out].l.toLowerCase()+' logged';
+    this.setState(s=>({problems:[{gym,b:band,f:fine,att,out},...s.problems],att:1,toast:msg}));
+    clearTimeout(this._t);this._t=setTimeout(()=>this.setState({toast:null}),1800);
+  }
+  pickGym(i){const b=Math.floor(GYMS[i].bands.length/2);this.setState({gym:i,band:b,fine:mid(GYMS[i],b),gymOpen:false});}
+  componentWillUnmount(){clearTimeout(this._t);}
+  renderVals(){
+    const st=this.state, gym=GYMS[st.gym], band=gym.bands[st.band], fg=band.g[st.fine]||band.g[0];
+    const tabs=i=>TABS.map((l,j)=>({label:l,color:j===i?'#F3ECE8':'#6E6764',bar:j===i?'#F3ECE8':'transparent'}));
+    const xs=i=>(i*324/27).toFixed(1), ys=v=>(104-(v-40)*1.6).toFixed(1);
+    const pts=TRACE.map((v,i)=>xs(i)+','+ys(v)).join(' ');
+    const bandOf=(gm,x)=>gm.bands.find(b=>b.g.includes(x));
+    const pyr=[['7B',0,1],['7A+',1,2],['7A',3,1],['6C+',5,0],['6C',7,0],['6B+',9,0]].map(([x,s,p])=>{const b=bandOf(gym,x);
+      return {g:this.g(x),c:!b||b.num||b.dark?'#6E6764':b.color,sw:(s*8)+'%',pw:(p*8)+'%',label:s+(p?' · '+p:'')};});
+    const pct=v=>((v-1500)/20)+'%';
+    const showFine=(this.props.showFineRow??true)&&gym.kind==='colour'&&band.g.length>1;
+    return {
+      tabs0:tabs(0),tabs1:tabs(1),tabs2:tabs(2),tabs3:tabs(3),tabs4:tabs(4),
+      habits:['Stretch','Read','Guitar','Mind'].map((l,i)=>({label:l,bg:st.habits[i]?'#F3ECE8':'transparent',ring:st.habits[i]?'none':'inset 0 0 0 2px #3A3536',mark:st.habits[i]?'✓':'',labelColor:st.habits[i]?'#F3ECE8':'#A39A97',
+        toggle:()=>this.setState(s=>{const h=[...s.habits];h[i]=!h[i];return{habits:h};})})),
+      supps:['Creatine','Vit D','Collagen'].map((n,i)=>({n,mark:st.supps[i]?'✓':'',bg:st.supps[i]?'#1C191A':'transparent',ring:st.supps[i]?'none':'inset 0 0 0 1px #3A3536',ink:st.supps[i]?'#F3ECE8':'#A39A97',
+        toggle:()=>this.setState(s=>{const x=[...s.supps];x[i]=!x[i];return{supps:x};})})),
+      feelLabel:st.feel?'✓ Logged':'Same as Sun',feelBg:st.feel?'transparent':'#F3ECE8',feelInk:st.feel?'#10FFCB':'#0A0909',
+      confirmFeel:()=>this.setState(s=>({feel:!s.feel})),
+      archetypes:[['Limit boulder','Grade · tries · outcome',S,3],['Intervals','Moves · sets · rest',A,2],['Circuits','Blocks · time · pump',M,1],['Hangboard','Edge · work:rest · load',U,4],['Strength','Sets · reps · load · RIR',P,0],['Run','Duration · effort',P,0]]
+        .map(([name,hint,color,l])=>({name,hint,color,lvlLabel:['NONE','LOW','MODERATE','HIGH','VERY HIGH'][l],segs:[0,1,2,3].map(k=>({bg:k<l?color:'#2A2627'}))})),
+      tracePts:pts,traceArea:pts+' 324,112 0,112',
+      loadBars:LOADS.map(([h,c])=>h?{h:h+'%',c}:{h:'4%',c:'#2A2627'}),
+      pyramid:pyr,
+      tests:TESTS.map(t=>({...t,h:t.h.map((v,k)=>({h:v+'%',c:k===5?'#F3ECE8':'#3A3536'}))})),
+      sleep:[7.2,6.8,7.9,8.1,6.5,7.4,7.7].map(v=>({h:(v/9*100)+'%',c:v>=7.5?'#B5F8FE':'#4E7376'})),
+      fuel:FUEL.map(([d,c,d1,d2,i1,i2])=>({d,dot:c?S:'transparent',dl:pct(d1),dw:((d2-d1)/20)+'%',il:pct(i1),iw:((i2-i1)/20)+'%'})),
+      gymName:gym.name,gymNameUpper:gym.name.toUpperCase(),
+      gymOpen:st.gymOpen,openGym:()=>this.setState({gymOpen:true}),closeGym:()=>this.setState({gymOpen:false}),
+      gyms:GYMS.map((gm,i)=>({name:gm.name,note:gm.note,noteColor:gm.warn?'#FBD87F':'#6E6764',bg:i===st.gym?'#1C191A':'transparent',mark:i===st.gym?'✓':'',
+        strip:gm.bands.map((b,k)=>b.num?{c:'oklch('+(0.32+k*0.035).toFixed(3)+' 0 0)',edge:'none'}:{c:b.color,edge:b.dark?EDGE:'none'}),pick:()=>this.pickGym(i)})),
+      gymChips:GYMS.map((gm,i)=>({name:gm.name,bg:i===st.gym?'#F3ECE8':'#1C191A',ink:i===st.gym?'#0A0909':'#A39A97',pick:()=>this.pickGym(i)})),
+      problemCount:st.problems.length,
+      problems:st.problems.map(p=>{const b=GYMS[p.gym].bands[p.b],x=b.g[p.f]||b.g[0];return {g:this.g(x),alt:b.name+' · '+this.alt(x),att:p.att,color:b.num?'#2A2627':b.color,edge:b.dark?EDGE:'none',tag:b.num?b.name:'',out:OUT[p.out].l,bg:OUT[p.out].bg,ink:OUT[p.out].ink,ring:OUT[p.out].ring};}),
+      hasToast:!!st.toast,toast:st.toast,
+      curGrade:this.g(fg),curAlt:this.alt(fg),curBand:band.name+' @ '+gym.name,att:st.att,
+      attUp:()=>this.setState(s=>({att:Math.min(99,s.att+1)})),attDown:()=>this.setState(s=>({att:Math.max(1,s.att-1)})),
+      isColour:gym.kind==='colour',isNumber:gym.kind==='number',
+      bands:gym.bands.map((b,i)=>({name:b.name,color:b.color,
+        ring:i===st.band?'0 0 0 2px #141213, 0 0 0 4px #F3ECE8'+(b.dark?', '+EDGE:''):(b.dark?EDGE:'none'),
+        numBg:i===st.band?'#F3ECE8':'#1C191A',numInk:i===st.band?'#0A0909':'#F3ECE8',
+        pick:()=>this.setState({band:i,fine:mid(gym,i)})})),
+      showFine,
+      fineCells:band.g.map((x,f)=>({g:this.g(x),bg:f===st.fine?'#F3ECE8':'#1C191A',ink:f===st.fine?'#0A0909':'#A39A97',pick:()=>this.setState({fine:f})})),
+      logFlash:()=>this.log('flash'),logSend:()=>this.log('send'),logProject:()=>this.log('project'),
+      convRows:gym.bands.map(b=>({name:b.name,color:b.num?'#2A2627':b.color,edge:b.dark?EDGE:'none',font:range(b.g),v:range(b.g.map(x=>V[x]))})),
+      matrix:FONT.map(x=>({g:x,v:V[x],cur:x===fg?'#1C191A':'transparent',cells:GYMS.map(gm=>{const b=bandOf(gm,x);
+        return b?{label:b.name,bg:b.num?'#2A2627':b.color,ink:b.ink,edge:b.dark?EDGE:'none'}:{label:'—',bg:'transparent',ink:'#3A3536',edge:'none'};})}))
+    };
+  }
+}
+</script>
+</body>
+</html>
