@@ -1,0 +1,8 @@
+.slot { font: 600 11px var(--font-mono); text-transform: uppercase; color: var(--ink-3); }
+.right { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+.x { width: 36px; height: var(--tap-min); color: var(--ink-3); font-size: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: var(--gap-chip); }
+.ai { display: flex; gap: 8px; }
+.ai > button { flex: 1; }
+.manual { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; }
+.pendingRow { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; color: var(--ink); }

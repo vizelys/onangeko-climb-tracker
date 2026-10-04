@@ -31,6 +31,8 @@ export interface Problem {
   gradeAsEntered: string;
   attempts: number;
   outcome: Outcome;
+  /** Gym whose tag this was, so the row keeps its swatch if the session's gym changes. */
+  gymId?: string;
   /** Epoch ms, orders the list newest-first. */
   loggedAt: number;
 }

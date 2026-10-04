@@ -1,0 +1,14 @@
+.readiness { padding: 4px 4px 8px; display: flex; flex-direction: column; gap: 8px; }
+.sentence { margin: 0; font-weight: 600; font-size: 22px; line-height: 1.28; letter-spacing: -0.01em; text-wrap: pretty; }
+.alt { color: var(--ink-2); }
+.chart { width: 100%; height: auto; display: block; }
+.xLabels { display: flex; justify-content: space-between; font: 500 11px var(--font-mono); color: var(--ink-3); }
+.todayLabel { color: var(--ink); }
+.watch { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); }
+.bars { height: 56px; display: flex; align-items: flex-end; gap: 5px; }
+.bar { flex: 1; border-radius: var(--r-bar); }
+.pyrRow { height: 18px; display: flex; align-items: center; gap: 10px; }
+.pyrGrade { width: 34px; font: 500 12px var(--font-mono); color: var(--ink-2); }
+.pyrTrack { flex: 1; display: flex; gap: 2px; height: 12px; }
+.pyrSend, .pyrProj { height: 100%; border-radius: var(--r-bar); }
+.pyrCount { width: 40px; text-align: right; font: 500 11px var(--font-mono); color: var(--ink-3); }

@@ -1,0 +1,23 @@
+.form {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  padding-top: max(env(safe-area-inset-top), 12px);
+}
+.header { display: flex; align-items: center; gap: 10px; padding: 4px var(--pad-screen) 10px; }
+.headLeft { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.headLabel { font: 600 11px var(--font-mono); letter-spacing: 0.08em; }
+.body { flex: 1; overflow-y: auto; padding: 0 var(--pad-screen) 16px; display: flex; flex-direction: column; gap: 14px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.rows { display: flex; flex-direction: column; gap: 6px; }
+.rowHead, .rowHang { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 32px; gap: 5px; align-items: center; }
+.rowHeadStr, .rowStr { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 32px; gap: 5px; align-items: center; }
+.rowHead, .rowHeadStr { font: 600 10px var(--font-mono); color: var(--ink-3); letter-spacing: 0.06em; text-transform: uppercase; }
+.rowHang input, .rowStr input { padding: 0 6px; text-align: center; }
+.exName { font-size: 13px; font-weight: 600; }
+.x { height: var(--tap-min); color: var(--ink-3); font-size: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: var(--gap-chip); margin-top: 6px; }
+.rpe { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; }
+.footer { padding: 8px var(--pad-screen) calc(16px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 4px; }

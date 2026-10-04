@@ -1,0 +1,10 @@
+.toast {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--mint);
+  animation: fade var(--t-fade) linear;
+}
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }

@@ -1,0 +1,35 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: max(env(safe-area-inset-top), 12px);
+}
+.main {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tabs {
+  height: calc(var(--tab-bar) - 20px + env(safe-area-inset-bottom));
+  min-height: 64px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--line-soft);
+  display: flex;
+  padding: 6px 8px env(safe-area-inset-bottom);
+  background: var(--bg);
+}
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--ink-3);
+  min-height: var(--tap-min);
+}
+.bar { width: 20px; height: 3px; border-radius: 2px; background: transparent; }
+.active { color: var(--ink); }
+.active .bar { background: var(--ink); }

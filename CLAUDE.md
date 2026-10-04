@@ -15,15 +15,20 @@ wired up.
 
 ## Before you write anything
 
-- `src/grades/` is **built and tested** (19 tests). Do not rewrite it, do not
+- `src/grades/` is **built and tested**. Do not rewrite it, do not
   duplicate its conversion logic in a component. Import from it.
+- Derived values live in `src/domain/` as pure functions with tests. Screens
+  read source rows through `useData()` and compute; nothing derived is written.
+- Schema changes: add a new `this.version(n)` block in `src/db/db.ts`. Never
+  edit a shipped version in place.
 - Run `npm test` before and after. Do not commit with failing tests.
 - `npx tsc --noEmit` must stay clean. `strict` is on and stays on.
 
 ## Build order
 
 Follow §8 of `SPEC.md`. Each step has acceptance criteria; meet them before
-moving on. Current position: step 1 done, step 2 (persistence) next.
+moving on. Current position: steps 1–6 have a first build. Outstanding: the
+measured six-problems-in-60s check on a real phone (step 3).
 
 ## Conventions
 

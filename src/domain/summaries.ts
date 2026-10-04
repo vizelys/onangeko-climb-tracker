@@ -96,7 +96,7 @@ export function sumRanges(meals: Meal[]): KcalRange {
 
 export function formatKcalRange(r: KcalRange): string {
   const k = (n: number) => (n / 1000).toFixed(1);
-  if (r.low === 0 && r.high === 0) return '0';
+  if (r.low === 0 && r.high === 0) return '—';
   return `${k(r.low)}–${k(r.high)}k`;
 }
 

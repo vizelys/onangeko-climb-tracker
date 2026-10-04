@@ -1,0 +1,70 @@
+.planTitle { font-weight: 750; font-size: 30px; font-stretch: 112%; letter-spacing: -0.02em; }
+.planSub { font-size: 14px; color: var(--ink-2); margin-top: 4px; }
+.start { height: 56px; border-radius: var(--r-button); color: var(--on-accent); font-weight: 700; font-size: 17px; width: 100%; }
+.done { color: var(--mint); font-weight: 600; font-size: 15px; min-height: 24px; }
+
+.habits { display: flex; justify-content: space-between; padding: 2px 10px; }
+.habit { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 56px; touch-action: manipulation; -webkit-touch-callout: none; }
+.habitDot {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px var(--line-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--on-accent);
+}
+.habitDone { background: var(--ink); box-shadow: none; }
+.habitUndo { box-shadow: 0 0 0 3px var(--jasmine); }
+.habitLabel { font-size: 12px; font-weight: 500; }
+
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-grid); }
+.tile {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+  border-radius: var(--r-tile);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.big { font-size: 38px; line-height: 44px; }
+.unit { font-size: 18px; color: var(--ink-2); margin: 0 1px; }
+.dim { color: var(--ink-3); }
+.fuel { font-size: 28px; line-height: 44px; letter-spacing: -0.02em; }
+.tileCap { font-size: 12px; color: var(--ink-2); line-height: 1.35; }
+.track { position: relative; height: 8px; border-radius: 4px; background: var(--surface-2); margin: 2px 0; }
+.demand { position: absolute; top: -3px; bottom: -3px; border: 1px solid var(--ink-3); border-radius: 4px; }
+.intakeHigh { position: absolute; left: 0; top: 0; height: 8px; border-radius: 4px; background: var(--petal); opacity: 0.35; }
+.intakeLow { position: absolute; left: 0; top: 0; height: 8px; border-radius: 4px; background: var(--petal); z-index: 1; }
+
+.feel { background: var(--surface-1); border: 1px solid var(--line); border-radius: 16px; padding: 8px 8px 8px 14px; display: flex; flex-direction: column; gap: 10px; }
+.feelTop { display: flex; align-items: center; gap: 10px; }
+.feelText { flex: 1; display: flex; flex-direction: column; gap: 2px; text-align: left; min-height: var(--tap-min); justify-content: center; }
+.feelSummary { font-size: 13px; color: var(--ink); }
+.same { height: var(--tap-min); padding: 0 14px; border-radius: var(--r-chip); background: var(--ink); color: var(--on-accent); font-weight: 700; font-size: 14px; }
+.logged { height: var(--tap-min); padding: 0 14px; display: flex; align-items: center; color: var(--mint); font-weight: 700; font-size: 14px; }
+.scales { display: flex; flex-direction: column; gap: 6px; padding-right: 6px; }
+.scale { display: flex; align-items: center; gap: 10px; }
+.scaleLabel { width: 52px; font-size: 13px; color: var(--ink-2); }
+
+.supps { display: flex; gap: var(--gap-chip); }
+.supp {
+  flex: 1;
+  height: var(--tap-min);
+  border-radius: var(--r-chip);
+  box-shadow: inset 0 0 0 1px var(--line-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.suppTaken { background: var(--surface-2); box-shadow: none; color: var(--ink); }
+.check { color: var(--mint); }

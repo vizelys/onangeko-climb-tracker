@@ -68,3 +68,12 @@
 .swatch-black {
   box-shadow: inset 0 0 0 1.5px var(--edge-black);
 }
+
+/* Additions for the app shell (not in the handoff palette). */
+:root {
+  --scrim: rgba(0, 0, 0, 0.6);
+  --norm-band: rgba(42, 38, 39, 0.6); /* --line @ 60% */
+  --trace-fill: rgba(247, 85, 144, 0.12); /* --strawberry @ 12% */
+  --status-bar: 47px;
+  --tab-bar: 84px;
+}

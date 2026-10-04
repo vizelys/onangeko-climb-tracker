@@ -309,4 +309,9 @@ Arbitrary units; consistency over precision (§5).
 | --- | --- |
 | `PlanDay` | weekday (0 = Mon), archetype \| `rest`, minutes?, note? |
 | `GymProfile` | the `Gym` shape from `src/grades/gyms.ts`; overrides or adds to the built-ins by `id` |
-| `Setting` | key, value — grade display, demand ranges, Gemini key, body-weight row toggle |
+| `Setting` | key, value — grade display, demand ranges, alarm, Gemini key |
+| `MealPreset` | id, name, estimate (kcal range) |
+
+Added fields: `Session.startedAt` (drives the live timer; a session with no
+`duration` is still open), `Problem.gymId` and `Problem.loggedAt`,
+`SetRow.distanceKm` (runs).
