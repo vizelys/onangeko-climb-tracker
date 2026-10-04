@@ -271,3 +271,42 @@ user exists.
 - Gym profile editor UI is unspecified — a list of band name, colour, Font range
 - Whether two-grade bands should default to the easier or harder grade
 - Whether calorie estimates should ever show a point value on request
+
+---
+
+## 11. Decisions (settled 4 Oct 2026)
+
+Answers to gaps the sections above left open. These are binding.
+
+| Topic | Decision |
+| --- | --- |
+| Deployment | PWA on GitHub Pages, built by a GitHub Action on push to `main`. Installed via Safari › Add to Home Screen. |
+| Two-grade bands | Default to the easier grade (`floor((n - 1) / 2)`, unchanged). |
+| Planned session | A **weekly template**: one archetype (or rest) per weekday, set in Me. Today shows that day's entry. EASE or REST FINGERS readiness swaps a high-finger plan for a lower-load alternative. |
+| Ending a session | End opens a one-tap RPE sheet (1–10). Duration comes from the timer. Dismissing still saves, RPE 7. |
+| Food estimates | Preset and manual ranges always work offline. Optional `text`/`photo` estimates call the Gemini API free tier with a key the user pastes in Me; the key never leaves the device except to Google. Without a key those sources are hidden. |
+| Demand band | Two fixed ranges set once in Me: rest day and training day. A day with any session that has finger load > 0 or duration ≥ 45 min uses the training range. |
+| Niggle areas | Fixed picklist: `finger | wrist | elbow | shoulder | back | knee | other`, with free text for detail. Finger `hurting` forces REST FINGERS. Wrist or elbow `hurting` downgrades one step. |
+| Gyms | The Roof stays provisional. Me › Gyms edits profiles (band name, colour, Font range). Edits never rewrite logged problems — `gradeAsEntered` is the audit trail. |
+| Grade display | Font by default; V selectable in Me. |
+
+### Finger-load volume × intensity
+
+Arbitrary units; consistency over precision (§5).
+
+| Archetype | volume | intensity |
+| --- | --- | --- |
+| limit | total attempts across problems | `(fontIndex(grade) + 1) / (fontIndex(top) + 1)` averaged over attempts, where `top` is the hardest send in the previous 8 weeks (fallback: the hardest grade in this session) |
+| hangboard | total hang seconds ÷ 10 | `1 + addedKg / 70` (negative for assisted) |
+| intervals, circuits | duration minutes | `rpe / 10` (RPE 7 if missing) |
+| strength, run | — | weight 0 |
+
+"High-load session" (readiness rule 1) = finger load ≥ the 75th percentile of the user's own sessions in the last 28 days with load > 0.
+
+### Added entities
+
+| Entity | Fields |
+| --- | --- |
+| `PlanDay` | weekday (0 = Mon), archetype \| `rest`, minutes?, note? |
+| `GymProfile` | the `Gym` shape from `src/grades/gyms.ts`; overrides or adds to the built-ins by `id` |
+| `Setting` | key, value — grade display, demand ranges, Gemini key, body-weight row toggle |
